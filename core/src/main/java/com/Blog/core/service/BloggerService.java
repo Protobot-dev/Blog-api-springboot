@@ -4,8 +4,7 @@ import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
+//import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.Blog.core.dao.IBloggerRepository;
@@ -14,10 +13,10 @@ import com.Blog.core.model.Blogger;
 @Service
 public class BloggerService {
 
-	@Autowired
+	//@Autowired
 	private final IBloggerRepository bloggerRepository;
 
-	public BloggerService(@Qualifier("Mongo") IBloggerRepository bloggerRepository) {
+	public BloggerService(IBloggerRepository bloggerRepository) {
 		this.bloggerRepository = bloggerRepository;
 	}
 	

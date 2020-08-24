@@ -5,15 +5,15 @@ import java.util.Optional;
 import java.util.UUID;
 import java.util.stream.Collectors;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Repository;
+//import org.springframework.beans.factory.annotation.Autowired;
+//import org.springframework.stereotype.Repository;
 
 import com.Blog.core.model.Post;
 
-@Repository("Mongo")
+//@Repository
 public class PostDataAccessService {
 
-	@Autowired
+	//@Autowired
 	private IPostRepository postRepository;
 	
 	public String createPost(Post post) {

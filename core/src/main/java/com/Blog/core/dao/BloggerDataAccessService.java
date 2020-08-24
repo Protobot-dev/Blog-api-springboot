@@ -5,15 +5,15 @@ import java.util.Optional;
 import java.util.UUID;
 
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Repository;
+//import org.springframework.beans.factory.annotation.Autowired;
+//import org.springframework.stereotype.Repository;
 
 import com.Blog.core.model.Blogger;
 
-@Repository("Mongo")
+//@Repository
 public class BloggerDataAccessService {
 
-	@Autowired
+	//@Autowired
 	private IBloggerRepository bloggerRepository;
 	
 	public String createBlogger(Blogger blogger) {

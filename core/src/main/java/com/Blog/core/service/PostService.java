@@ -5,8 +5,7 @@ import java.util.Optional;
 import java.util.UUID;
 
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
+//import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.Blog.core.dao.IPostRepository;
@@ -15,10 +14,10 @@ import com.Blog.core.model.Post;
 @Service
 public class PostService {
 
-	@Autowired
+	//@Autowired
 	private final IPostRepository postRepository;
 	
-	public PostService(@Qualifier("Mongo") IPostRepository postRepository) {
+	public PostService(IPostRepository postRepository) {
 		this.postRepository = postRepository;
 	}
 	
